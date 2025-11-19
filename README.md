@@ -1,15 +1,5 @@
 # 🕌 Islamic GPT
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" alt="Islamic GPT Banner" width="800"/>
-  
-  **A respectful AI companion for Islamic knowledge based on Quran and Authentic Hadith**
-  
-  [![React](https://img.shields.io/badge/React-19.2.0-blue.svg)](https://reactjs.org/)
-  [![TypeScript](https://img.shields.io/badge/TypeScript-5.8.2-blue.svg)](https://www.typescriptlang.org/)
-  [![Vite](https://img.shields.io/badge/Vite-6.2.0-646CFF.svg)](https://vitejs.dev/)
-  [![Gemini AI](https://img.shields.io/badge/Gemini-2.5%20Flash-4285F4.svg)](https://ai.google.dev/)
-</div>
 
 ## 📖 About
 
