@@ -175,7 +175,7 @@ const ChatInterface: React.FC = () => {
             </button>
           </form>
           <div className="text-center mt-2 text-[10px] text-gray-400">
-             Powered by Gemini 2.5
+             A <a href="https://www.youtube.com/@GameDev-Ayaan" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700 underline">GameDev Ayaan</a> Creation.
           </div>
         </div>
       </footer>

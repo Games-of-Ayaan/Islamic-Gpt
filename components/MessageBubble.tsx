@@ -25,20 +25,25 @@ const MessageBubble: React.FC<MessageBubbleProps> = ({ message, isAnimated = fal
     setIsTyping(true);
     setDisplayedContent('');
     
-    let currentIndex = 0;
     const fullText = message.content;
+    const startTime = Date.now();
+    const typingSpeed = 10; // milliseconds per character
     
-    const intervalId = setInterval(() => {
+    const animate = () => {
+      const elapsed = Date.now() - startTime;
+      const currentIndex = Math.floor(elapsed / typingSpeed);
+      
       if (currentIndex < fullText.length) {
         setDisplayedContent(fullText.slice(0, currentIndex + 1));
-        currentIndex++;
+        requestAnimationFrame(animate);
       } else {
-        clearInterval(intervalId);
+        setDisplayedContent(fullText);
         setIsTyping(false);
       }
-    }, 10); // Adjust speed: lower is faster
-
-    return () => clearInterval(intervalId);
+    };
+    
+    const animationId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animationId);
   }, [message.content, isAnimated]);
 
   return (
